@@ -8,17 +8,17 @@ def validate_list(list):
     
     return list
 while True:
- try:
-    list1 = list(map(int,input("Enter the elements: ").split()))
-    # valid the list length
-    vld_list = validate_list(list1)
+    try:
+        list1 = list(map(int,input("Enter the elements: ").split()))
+        # valid the list length
+        vld_list = validate_list(list1)
 
-    # if the input is valid break the loop
-    break
+        # if the input is valid break the loop
+        break
     
- except ValueError as e:
-    print(e)
-    print("please try again: ")
+    except ValueError as e:
+        print(e)
+        print("please try again: ")
 
 # print("\n\n'validated List'",vld_list)
 # print("\n")
